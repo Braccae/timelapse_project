@@ -39,7 +39,7 @@ class HIDKeyboard:
     ])
 
     def __init__(self, vendor_id=0x1d6b, product_id=0x0104):
-        self.dev = usb.core.find(idVendor=1d6b, idProduct=0104)
+        self.dev = usb.core.find(idVendor=0x1d6b, idProduct=0x0104)
         if self.dev is None:
             raise ValueError('Device not found')
 
