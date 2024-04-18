@@ -66,5 +66,5 @@ class HIDKeyboard:
         self.send_report(report)
 
     def cameraShutter(self):
-        self.send_keystroke(0x10)  # Camera shutter key code (0x28), Volume up (0x10)
+        self.send_keystroke(0xE9)  # Camera shutter key code (0x28), Volume up (0xE9)
         
